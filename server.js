@@ -4,7 +4,7 @@ const fetch = require('node-fetch');
 const path = require('path');
 const process = require('process');
 const app = express();
-const PORT = 8000;
+const port = process.env.PORT || 5000;
 const URL = `http://127.0.0.1:${PORT}`;
 var data_dir = "data";
 
